@@ -4,11 +4,11 @@ Everything you need to build a Svelte project, powered by [create-svelte](https:
 
 ## Creating a Project
 
-If you're seeing this, you've probably already done this step. Congrats!
+To create a new Svelte project, use the following commands:
 
 ```bash
 # Create a new project in the current directory
 npm create svelte@latest
 
-# Create a new project in my-app
+# Create a new project in a specific directory (e.g., my-app)
 npm create svelte@latest my-app
