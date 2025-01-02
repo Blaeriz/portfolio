@@ -220,9 +220,6 @@
             <div class={skillsCardDivStyles}>C#</div>
           </li>
           <li class={skillsCardLiStyles}>
-            <div class={skillsCardDivStyles}>Dart</div>
-          </li>
-          <li class={skillsCardLiStyles}>
             <div class={skillsCardDivStyles}>HTML</div>
           </li>
           <li class={skillsCardLiStyles}>
