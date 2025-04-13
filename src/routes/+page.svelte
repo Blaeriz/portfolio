@@ -158,7 +158,7 @@
 
 <main>
   {#if scrollPosition !== 0}
-    <button class="fixed bottom-[20px] right-[20px] bg-[#9b5094] p-[10px_20px] text-[#232823] border-none rounded-[50%] cursor-pointer z-50 text-2xl text-center" on:click={scrollTop}><i class="fa-solid fa-arrow-up"></i></button>
+    <button class="fixed bottom-[20px] right-[20px] bg-white p-[10px_20px] text-[#000000] border-none rounded-[50%] cursor-pointer z-50 text-2xl text-center" on:click={scrollTop}><i class="fa-solid fa-arrow-up"></i></button>
   {/if}
   
   <!-- Your Svelte component content goes here -->
@@ -418,9 +418,9 @@
         </ul>
 
         <!-- Certifications -->
-        <div class="pt-5 pb-16">
+        <!-- <div class="pt-5 pb-16">
           <h2 class={titleStyles}>Certifications</h2>
-        </div>
+        </div> -->
 
 
       </div>
