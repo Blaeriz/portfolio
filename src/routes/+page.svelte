@@ -150,6 +150,7 @@
       <p class="flex flex-row gap-2 justify-between text-white uppercase m-2"><Icon icon="lucide:map-pin" height="auto"></Icon> Mumbai, IN</p>
       <div class="flex flex-row gap-2 m-2 text-white">
         <a href="https://www.linkedin.com/in/hppingle" target="_blank" rel="noopener noreferrer"><Icon icon="mdi:linkedin" height="auto"></Icon></a>
+        <a href="https://www.github.com/Blaeriz" target="_blank" rel="noopener noreferrer"><Icon icon="mdi:github" height="auto"></Icon></a>
       </div>
     </div>
     <div class="flex flex-col items-center justify-center min-w-full min-h-[100vh]">
