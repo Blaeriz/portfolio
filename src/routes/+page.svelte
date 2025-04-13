@@ -10,7 +10,7 @@
   let cardH3Styles = "text-[#8a8b8b] font-[700] text-xl py-2 text-left group-hover:text-[#e0e0e0]"
   let cardPStyles = "text-[#8a8b8b] font-[400] text-l text-left group-hover:text-[#e0e0e0]"
   let cardImageStyles = "transition-transform transform group-hover:scale-110"
-  let titleStyles = "uppercase text-[#9b5094] font-[700] text-4xl"
+  let titleStyles = "uppercase text-white font-[700] text-4xl"
   let subTitleStyles = "text-[#8a8b8b] font-[400] text-l text-center"
   let skillsCardLiStyles = "flexrelative flex-auto text-center items-center p-[5px] justify-between text-[#8a8a8a] font-extrabold md:w-1/3 sm:w-1/2"
   let skillsCardDivStyles = "border border-[2px_solid] p-3 w-full h-full flex justify-center items-center hover:text-[#211d26] hover:bg-[#8a8a8a] tracking-wide"
@@ -22,7 +22,6 @@
 
   onMount(() => {
     window.scrollTo(0, 0);
-
 
     // // Update the scrollPosition variable with the current scroll position
     // scrollPosition = window.scrollY;
@@ -145,7 +144,7 @@
   {/if}
   
   <!-- Your Svelte component content goes here -->
-   <div class="bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] sticky top-0">
+   <div class="bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] sticky top-0 mannualBlur">
     <div class="flex flex-row justify-between">
       <p class="flex flex-row gap-2 justify-between text-white uppercase m-2"><Icon icon="lucide:map-pin" height="auto"></Icon> Mumbai, IN</p>
       <div class="flex flex-row gap-2 m-2 text-white">
@@ -153,11 +152,11 @@
         <a href="https://www.github.com/Blaeriz" target="_blank" rel="noopener noreferrer"><Icon icon="mdi:github" height="auto"></Icon></a>
       </div>
     </div>
-    <div class="flex flex-col items-center justify-center min-w-full min-h-[100vh]">
+    <div class="flex flex-col min-w-full min-h-[100vh] mt-32">
         <div class="mannualBlur text-center">
-            <h1 class="block uppercase text-[25px] animate-charcter md:text-[50px] lg:text-[75px]">Hrishikesh Pingle</h1>
+            <h1 class="block uppercase text-[25px] animate-charcter md:text-[75px] lg:text-[100px]">Hrishikesh Pingle</h1>
             <p class="block text-[1em] lg:text-[1.5em] md:text-[1.2em] w-[75vw] max-w-[900px] m-[1em_auto] font-[400] text-[#ffffff]">I like building cool shit.</p>
-            <div class="flex flex-row justify-center gap-8">
+            <div class="flex flex-row justify-center gap-20">
               <button class="text-[0.9em] text-black mix-blend-difference font-[700] bg-white uppercase px-[10px] py-[15px] tracking-widest rounded-md" on:click={knowMore}>Know More</button>
               <a class="flex flex-row gap-2 justify-between text-[1em] font-[700] bg-transparent text-[#ffffff] border border-white uppercase px-[10px] py-[15px] tracking-widest rounded-md" href='/download_resume'><DownloadIcon></DownloadIcon> Resume</a>
             </div>
@@ -187,6 +186,12 @@
         <ul class="list-none flex flex-wrap justify-center box-border flex-row m-0 p-[0_20px]">
           <li class={skillsCardLiStyles}>
             <div class={skillsCardDivStyles}>Python</div>
+          </li>
+          <li class={skillsCardLiStyles}>
+            <div class={skillsCardDivStyles}>Rust</div>
+          </li>
+          <li class={skillsCardLiStyles}>
+            <div class={skillsCardDivStyles}>ROS2</div>
           </li>
           <li class={skillsCardLiStyles}>
             <div class={skillsCardDivStyles}>Java</div>
@@ -225,39 +230,18 @@
             <div class={skillsCardDivStyles}>Flutter</div>
           </li>
           <li class={skillsCardLiStyles}>
-            <div class={skillsCardDivStyles}>Dart</div>
-          </li>
-          <li class={skillsCardLiStyles}>
-            <div class={skillsCardDivStyles}>Swift</div>
-          </li>
-          <li class={skillsCardLiStyles}>
-            <div class={skillsCardDivStyles}>Figma</div>
-          </li>
-          <li class={skillsCardLiStyles}>
             <div class={skillsCardDivStyles}>MySql</div>
           </li>
           <li class={skillsCardLiStyles}>
-            <div class={skillsCardDivStyles}>Photoshop</div>
+            <div class={skillsCardDivStyles}>Git/Github</div>
+          </li>
+          <li class={skillsCardLiStyles}>
+            <div class={skillsCardDivStyles}>STM32/ESP32</div>
+          </li>
+          <li class={skillsCardLiStyles}>
+            <div class={skillsCardDivStyles}>Arduino/RaspberryPI</div>
           </li>
         </ul>
-
-        <!-- Contact Me Form  -->
-        <div class="pt-5 pb-16">
-          <h2 class={titleStyles}>Contact Me</h2>
-          <p class={subTitleStyles}>Let's talk! Fill out the form below.</p>
-        </div>
-
-        <!-- Contact Me Form Here -->
-        <form action="https://formspree.io/f/xkndovwb" method="post">
-          <div class="block m-[0_auto] max-w-[900px] md:p-[0_40px] lg:w-[90wv] mb-10 space-y-4">
-            <div class="flex flex-row space-x-3 justify-center items-center">
-              <input type="text" name="name" class={contactFormInputStyles} placeholder="Name" bind:value={name}>
-              <input type="email" name="email" class={contactFormInputStyles} placeholder="Email" bind:value={email}>
-            </div>
-            <input name="message" class={contactFormMessageInputStyles} placeholder="Message" bind:value={message}>
-            <button class="inline-block text-[0.9em] font-[700] bg-[#9b5094] text-[#232823] uppercase px-[10px] py-[20px] m-[10px_auto] tracking-wide w-full rounded-md" type="submit">Submit</button>
-          </div>
-        </form>
       </div>
   </div>
 </main>
