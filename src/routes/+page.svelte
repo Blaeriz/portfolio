@@ -1,8 +1,8 @@
 <script>
   import { onMount } from "svelte";
   import '@fortawesome/fontawesome-free/css/all.min.css';
-  import winspectImg from '../images/latestWork/winspect.png';
-  import sihImage from '../images/latestWork/SIH.png';
+  import { DownloadIcon, MapPin} from 'lucide-svelte';
+  import Icon from '@iconify/svelte'
 
   let scrollPosition = 0;
 
@@ -145,52 +145,29 @@
   {/if}
   
   <!-- Your Svelte component content goes here -->
-  <div class="flex flex-col items-center justify-center min-w-full min-h-[100vh] bg-[#232823] sticky top-0 p-0 m-0">
-      <div class="mannualBlur text-center">
-          <h1 class="block text-[#9b5094] uppercase text-[25px] animate-charcter md:text-[50px] lg:text-[75px]">Hrishikesh Pingle</h1>
-          <p class="block text-[1em] lg:text-[1.5em] md:text-[1.2em] w-[75vw] max-w-[900px] m-[1em_auto] font-[400] text-[#8a8a8a]">Computer Science student at Bennett University. My journey with programming began early, and my enthusiasm for tech has only grown. Eager to tackle challenges and explore the dynamic world of computer science.</p>
-          <button class="inline-block text-[0.9em] font-[700] bg-[#9b5094] text-[#232823] uppercase px-[10px] py-[20px] m-[10px_auto] tracking-wide rounded-md" on:click={knowMore}>Know More</button>
+   <div class="bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] sticky top-0">
+    <div class="flex flex-row justify-between">
+      <p class="flex flex-row gap-2 justify-between text-white uppercase m-2"><Icon icon="lucide:map-pin" height="auto"></Icon> Mumbai, IN</p>
+      <div class="flex flex-row gap-2 m-2 text-white">
+        <a href="https://www.linkedin.com/in/hppingle" target="_blank" rel="noopener noreferrer"><Icon icon="mdi:linkedin" height="auto"></Icon></a>
       </div>
-  </div>
+    </div>
+    <div class="flex flex-col items-center justify-center min-w-full min-h-[100vh]">
+        <div class="mannualBlur text-center">
+            <h1 class="block uppercase text-[25px] animate-charcter md:text-[50px] lg:text-[75px]">Hrishikesh Pingle</h1>
+            <p class="block text-[1em] lg:text-[1.5em] md:text-[1.2em] w-[75vw] max-w-[900px] m-[1em_auto] font-[400] text-[#ffffff]">I like building cool shit.</p>
+            <div class="flex flex-row justify-center gap-8">
+              <button class="text-[0.9em] text-black mix-blend-difference font-[700] bg-white uppercase px-[10px] py-[15px] tracking-widest rounded-md" on:click={knowMore}>Know More</button>
+              <a class="flex flex-row gap-2 justify-between text-[1em] font-[700] bg-transparent text-[#ffffff] border border-white uppercase px-[10px] py-[15px] tracking-widest rounded-md" href='/download_resume'><DownloadIcon></DownloadIcon> Resume</a>
+            </div>
+        </div>
+    </div>
+   </div>
+  
   
   <div class="knowMore flex flex-row justify-center bg-none min-h-[100vh] min-w-full text-center sticky top-0 p-0 m-0">
-      
 
       <div class="flex flex-col justify-start w-[90%]">
-        <!-- Latest Work -->
-        <div class="pt-5 pb-16">
-          <h2 class={titleStyles}>Latest Work</h2>
-          <p class={subTitleStyles}>A small collection of some of my recent work</p>
-        </div>
-        <!-- Add Latest Work Here -->
-        <div class="grid md:grid-cols-2 sm:grid-cols-1 largest:grid-cols-3 gap-8 ">
-          <div class= {latestWorkCardStyles}>
-            <button>
-              <div class="relative overflow-hidden">
-                <figure>
-                  <img src={winspectImg} alt="" class={cardImageStyles}>
-                </figure>
-                <div>
-                  <h3 class={cardH3Styles}>Winspect Technologies</h3>
-                  <p class={cardPStyles}>In collaboration with Winspect Technologies, I recently crafted a dynamic website that seamlessly blends aesthetics and functionality. The user-friendly platform showcases Winspect's products and services, offering visitors an engaging online experience. Explore innovation through our digital gateway, designed to elevate Winspect's online presence.</p>
-                </div>
-              </div>
-            </button>
-          </div>
-          <div class={latestWorkCardStyles}>
-            <button>
-              <div class="relative overflow-hidden">
-                <figure>
-                  <img src={sihImage} alt="" class={cardImageStyles}>
-                </figure>
-                <div>
-                  <h3 class={cardH3Styles}>Smart India Hackathon</h3>
-                  <p class={cardPStyles}>During the Smart India Hackathon, I spearheaded the creation of an impactful child rights online education platform. This pioneering project delivers accessible and engaging educational content, championing the cause of children's rights. Our mission is to cultivate awareness and empower future generations through innovative digital learning experiences.</p>
-                </div>
-              </div>
-            </button>
-          </div>
-        </div>
         <!-- Experience -->
         <div class="pt-5 pb-16">
           <h2 class={titleStyles}>Experience</h2>
