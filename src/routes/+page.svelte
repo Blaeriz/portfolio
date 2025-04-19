@@ -166,9 +166,9 @@
    </div>
   
   
-  <div class="knowMore flex flex-row justify-center align-middle bg-none min-h-[100vh] text-center sticky top-0 p-0 m-0">
+  <div class="knowMore flex flex-row justify-center align-middle bg-none min-h-[100vh] text-center sticky top-0 p-0 mx-auto w-[90%]">
 
-      <div class="flex flex-col w-[90%]">
+      <div class="flex flex-col w-full">
         <!-- Experience -->
         <div class="pt-5 pb-16 text-center">
           <h2 class={titleStyles}>Experience</h2>
@@ -178,7 +178,7 @@
           <div>
               <ol class="group/list">
                   <li class="mb-12">
-                      <div class="flex flex-row align-middle justify-center items-center pb-1 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                      <div class="flex flex-row align-middle justify-center items-center pb-1 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50 w-full">
                           <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label="Jun – Jul 2024">Jun – Jul 2024</header>
                           <div class="flex flex-col align-middle justify-center items-center flex-[3_6]">
                               <h3 class="font-medium leading-snug text-slate-200 ">
