@@ -158,7 +158,7 @@
             <p class="block text-3xl font-bold w-[75vw] max-w-[900px] m-[1em_auto] text-[#ffffff]">¯\_(ツ)_/¯</p>
             <div class="flex flex-row justify-center gap-5 md:gap-10">
               <button class="text-sm text-black mix-blend-difference font-[700] text-[12px] bg-white uppercase px-[5px] py-[10px] tracking-wide rounded-md md:px-[10px] md:py-[15px] md:text-[15px]" on:click={knowMore}>Know More</button>
-              <a class="flex flex-row gap-2 justify-between text-[12px] font-[700] bg-transparent text-[#ffffff] border border-white uppercase px-[5px] py-[10px] tracking-wide rounded-md md:px-[10px] md:py-[15px] md:text-[15px]" href='https://hppingleblog.netlify.app'><Icon icon="mdi:blog-outline" width="24" height="24" /> Blog</a>
+              <a class="flex flex-row gap-2 justify-between text-[12px] font-[700] bg-transparent text-[#ffffff] border border-white uppercase px-[5px] py-[10px] tracking-wide rounded-md md:px-[10px] md:py-[15px] md:text-[15px]" href='https://hppingleblog.netlify.app' target="_blank" rel="noopener noreferrer"><Icon icon="mdi:blog-outline" width="24" height="24" /> Blog</a>
               <a class="flex flex-row gap-2 justify-between text-[12px] font-[700] bg-transparent text-[#ffffff] border border-white uppercase px-[5px] py-[10px] tracking-wide rounded-md md:px-[10px] md:py-[15px] md:text-[15px]" href='/download_resume'><DownloadIcon></DownloadIcon> Resume</a>
             </div>
         </div>
