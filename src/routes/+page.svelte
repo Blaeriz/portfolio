@@ -174,12 +174,12 @@
           <h2 class={titleStyles}>Experience</h2>
         </div>
 
-        <section id="experience" class="flex flex-col w-[90%]" aria-label="Work experience">
+        <section id="experience" class="flex flex-col w-[90%] mx-auto" aria-label="Work experience">
           <div>
               <ol class="group/list">
                   <li class="mb-12">
                       <div class="flex flex-row align-middle justify-center items-center pb-1 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50 w-full">
-                          <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label="Jun – Jul 2024">Jun – Jul 2024</header>
+                          <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2 hidden md:block" aria-label="Jun – Jul 2024">Jun – Jul 2024</header>
                           <div class="flex flex-col align-middle justify-center items-center flex-[3_6]">
                               <h3 class="font-medium leading-snug text-slate-200 ">
                                   <div>
@@ -190,7 +190,7 @@
                                           rel="noreferrer noopener"
                                           aria-label="Software Engineer, Intern at Onward Technologies"
                                       >
-                                          <span class="text-lg md:text-3xl">
+                                          <span class="text-base md:text-3xl">
                                               Software Engineer, Intern ·<!-- -->
                                               <span class="inline-block">
                                                   Onward Technologies
@@ -215,7 +215,7 @@
                               <p class="mt-2 leading-normal text-white hidden md:block pl-2 text-xs md:text-xl text-center">
                                 During my internship as a Software Engineering Intern at Bentley Motors, I conducted in-depth Exploratory Data Analysis (EDA) and developed three proof-of-concept (POC) models for the marketing team, which led to a 40% improvement in targeted campaign effectiveness and engagement. I collaborated with the team using Jupyter Notebook and worked extensively with tools, for data cleaning, processing, and visualization. Additionally, I engineered an interactive dashboard using Svelte to visualize cloud expenses from Azure, AWS, and GCP APIs. This dashboard featured real-time tracking and integrated a forecasting system that predicted monthly costs with an 85% accuracy rate.
                               </p>
-                              <ul class="mt-2 flex flex-wrap items-center pl-2" aria-label="Technologies used">
+                              <ul class="mt-2 flex flex-wrap items-center pl-2 justify-center align-middle" aria-label="Technologies used">
                                 <li class="mr-1.5 mt-2">
                                   <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs md:text-lg font-medium leading-5 text-teal-300">Jupyter Notebook</div>
                                 </li>
@@ -267,7 +267,7 @@
                   </li>
                   <li class="mb-12 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                     <div class="flex flex-row align-middle justify-center items-center pb-1 transition-all lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label="Jun – Jul 2024">Dec - Jan 2024</header>
+                        <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2 hidden md:block" aria-label="Jun – Jul 2024">Dec - Jan 2024</header>
                         <div class="flex flex-col align-middle justify-center items-center flex-[3_6]">
                             <h3 class="font-medium leading-snug text-slate-200 ">
                                 <div>
@@ -278,7 +278,7 @@
                                         rel="noreferrer noopener"
                                         aria-label="Software Engineer, Intern at WinspectTechnologies Pvt. Ltd."
                                     >
-                                        <span class="text-lg md:text-3xl">
+                                        <span class="text-base md:text-3xl">
                                             Software Engineer, Intern ·<!-- -->
                                             <span class="inline-block">
                                                 Winspect Technologies Pvt. Ltd.
@@ -303,7 +303,7 @@
                             <p class="mt-2 text-xs md:text-xl leading-normal text-white hidden md:block pl-2">
                               I built a multi-page, comprehensive website showcasing over 20 products and services, which led to a 40% increase in online engagement within the first quarter of launch. By streamlining the user experience through innovative design and intuitive navigation, I reduced bounce rates by 30% and improved average session duration by 25%. Additionally, I optimized the site’s performance using SEO best practices, achieving a top-three ranking for target keywords and increasing organic traffic by 150%, significantly boosting brand visibility.
                             </p>
-                            <ul class="mt-2 flex flex-wrap pl-2" aria-label="Technologies used">
+                            <ul class="mt-2 flex flex-wrap pl-2 items-center justify-center align-middle" aria-label="Technologies used">
                               <li class="mr-1.5 mt-2">
                                 <div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs md:text-lg font-medium leading-5 text-teal-300">WebDev</div>
                               </li>
