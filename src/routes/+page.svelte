@@ -154,7 +154,7 @@
     <div class="flex flex-col min-w-full min-h-[100vh] mt-32">
         <div class="mannualBlur text-center">
             <h1 class="block uppercase text-[32px] tracking-wider font-bold animate-charcter md:text-[75px] lg:text-[100px]">Hrishikesh Pingle</h1>
-            <p class="block text-2xl w-[75vw] md:text-5xl max-w-[900px] m-[1em_auto] font-[400] text-[#ffffff]">Tech is cool.</p>
+            <p class="block text-2xl w-[75vw] md:text-5xl max-w-[900px] m-[1em_auto] font-[400] text-[#ffffff]">I like everything security.</p>
             <p class="block text-3xl font-bold w-[75vw] max-w-[900px] m-[1em_auto] text-[#ffffff]">¯\_(ツ)_/¯</p>
             <div class="flex flex-row justify-center gap-5 md:gap-10">
               <button class="text-sm text-black mix-blend-difference font-[700] text-[12px] bg-white uppercase px-[5px] py-[10px] tracking-wide rounded-md md:px-[10px] md:py-[15px] md:text-[15px]" on:click={knowMore}>Know More</button>
