@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 
 export async function GET() {
-  const filePath = path.resolve("static/Hrishikesh_Pingle_Resume.pdf"); // Adjust path if needed
+  const filePath = path.resolve("static/Hrishikesh_Pingle.pdf"); // Adjust path if needed
 
   if (!fs.existsSync(filePath)) {
     throw error(404, "File not found");
@@ -14,7 +14,7 @@ export async function GET() {
     headers: {
       "Content-Type": "application/pdf",
       "Content-Disposition":
-        'attachment; filename="Hrishikesh_Pingle_Resume.pdf"',
+        'attachment; filename="Hrishikesh_Pingle.pdf"',
     },
   });
 }
